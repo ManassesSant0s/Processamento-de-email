@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Email Classifier — AutoU Case</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Email Classifier</h1>
+    <p class="subtitle">Faça upload de um email (.txt ou .pdf) ou cole o texto — receba a categoria e uma resposta sugerida.</p>
+
+    <form id="emailForm">
+      <label>Colar texto do email:</label>
+      <textarea name="email_text" id="email_text" rows="6" placeholder="Cole aqui o conteúdo do e-mail..."></textarea>
+
+      <div class="or">ou</div>
+
+      <div class="file-upload-container">
+        <input id="file" type="file" />
+        <label for="file" class="custom-file-upload">
+            Escolher Arquivo
+        </label>
+        <span id="file-name">Nenhum arquivo escolhido</span>
+      </div>
+
+
+      <br>
+      <button type="submit">Classificar e Gerar Resposta</button>
+    </form>
+
+    <div id="result" class="result hidden">
+      <h2>Resultado</h2>
+      <p><strong>Categoria:</strong> <span id="category"></span></p>
+      <h3>Resposta sugerida</h3>
+      <pre id="reply"></pre>
+
+      <details>
+        <summary>Trecho do texto processado</summary>
+        <pre id="extracted"></pre>
+      </details>
+    </div>
+
+    <footer>
+      <small> Editor simples • Teste com seus próprios emails</small>
+    </footer>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+:root{
+  --bg:#0f1724;
+  --card:#0b1220;
+  --accent:#7c3aed;
+  --muted:#9aa4b2;
+  --glass: rgba(255,255,255,0.04);
+}
+body{
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: linear-gradient(180deg, #071129 0%, #071a2a 100%);
+  color:#e6eef8;
+  margin:0;
+  padding:40px 12px;
+}
+.container{
+  max-width:900px;
+  margin:0 auto;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.01) 100%);
+  border-radius:12px;
+  padding:28px;
+  box-shadow:0 10px 30px rgba(2,6,23,0.6);
+}
+h1{ margin:0 0 6px 0; font-size:28px; }
+.subtitle{ color:var(--muted); margin-bottom:18px; }
+label{ display:block; margin-top:12px; color:var(--muted); }
+textarea{ width:100%; border-radius:8px; padding:12px; border:1px solid rgba(255,255,255,0.04); background:transparent; color:inherit; resize:vertical; min-height:120px; }
+input[type=file]{ display:block; margin-top:8px; }
+button{
+  margin-top:14px;
+  background:linear-gradient(90deg,var(--accent),#4f46e5);
+  border:none;
+  padding:10px 14px;
+  border-radius:10px;
+  color:white;
+  font-weight:600;
+  cursor:pointer;
+}
+.or{ text-align:center; margin:12px 0; color:var(--muted); }
+.result{ margin-top:18px; padding:14px; border-radius:8px; background:var(--glass); }
+.hidden{ display:none; }
+pre{ background:rgba(0,0,0,0.25); padding:12px; border-radius:8px; overflow:auto; }
+footer{ margin-top:20px; color:var(--muted); font-size:13px; }
+
+
+.file-upload-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px 0;
+}
+
+.file-upload-container input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #4f7cff; /* azul */
+    color: white;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+.custom-file-upload:hover {
+    background-color: #3861d8;
+}
+
+#file-name {
+    display: block;
+    margin-top: 8px;
+    font-size: 0.9em;
+    color: #ccc;
+    word-break: break-all;
+}
